@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intents y Funciones"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <!--  🔦 Linterna  -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLinterna"
+            style="@style/BotonApp"
+            android:text="🔦 Encender Linterna" />
+
+        <!-- Obtener Ubicación   -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUbicacion"
+            style="@style/BotonApp"
+            android:text="📍 Obtener mi Ubicación" />
+
+        <!-- Resultado de la Ubicación   -->
+        <TextView
+            android:id="@+id/tvUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicación aún no encontrada"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp" />
+
+        <!-- Ir a Mapa   -->
+        <!-- Intent Implícito 1: geo: (Google Maps)  -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMapa"
+            style="@style/BotonApp"
+            android:text="🗺️ Ver ubicación en el Mapa" />
+
+        <!-- Ir a la Segunda Vista   -->
+        <!-- Intent Explícito 1: con datos extra (putExtra)   -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSegundavista"
+            style="@style/BotonApp"
+            android:text="🪟 Ir a segunda vista" />
+
+        <!-- Intent Explícito 2: pantalla de ajustes -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnConfig"
+            style="@style/BotonApp"
+            android:text="⚙️ Configuración" />
+
+        <!-- Intent Explícito 3: formulario -> confirmación (con resultado) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFormulario"
+            style="@style/BotonApp"
+            android:text="📝 Formulario de contacto" />
+
+    </LinearLayout>
+</ScrollView>
